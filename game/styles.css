@@ -1,0 +1,168 @@
+/* SIMMER — warm street-food table. System fonts only, no webfonts, no network. */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #3a2418;
+  font-family: system-ui, sans-serif;
+  color: #fff8e6;
+}
+
+#game {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  touch-action: none;
+}
+
+#hud-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  background: rgba(24, 12, 6, 0.88);
+  border-bottom: 2px solid #f2b705;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.cook {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.cook-name {
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.favour-bar {
+  display: inline-block;
+  width: 100px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.favour-bar span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #7fb069;
+}
+
+.favour-text {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.stars {
+  color: #ffd34d;
+  font-size: 15px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.heat {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff7a3c;
+  white-space: nowrap;
+}
+
+.match-centre {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.25;
+  min-width: 0;
+}
+
+.game-title {
+  font-weight: 800;
+  letter-spacing: 6px;
+  font-size: 16px;
+  color: #ffd34d;
+}
+
+#round-text, #turn-text {
+  font-size: 11px;
+  color: #ffe9a8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+#buttons button {
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 7px;
+  border: 1px solid #f2b705;
+  border-radius: 6px;
+  background: #5a3a28;
+  color: #ffe9a8;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#buttons button:hover {
+  background: #7a4e2c;
+}
+
+#log-strip {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 26px;
+  background: rgba(24, 12, 6, 0.85);
+  border-top: 1px solid rgba(242, 183, 5, 0.5);
+  z-index: 5;
+  overflow: hidden;
+}
+
+#log {
+  margin: 0;
+  padding: 4px 12px;
+  list-style: none;
+  font-size: 13px;
+  color: #ffe9a8;
+}
+
+#log li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Read aloud, never shown: the status line screen readers announce. */
+#status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

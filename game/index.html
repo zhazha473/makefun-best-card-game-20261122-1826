@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIMMER — a street-food card duel</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header id="hud-top">
+  <div class="cook" id="you-box">
+    <span class="cook-name">Chef Basil — YOU</span>
+    <span class="favour-bar"><span id="you-favour-fill"></span></span>
+    <span class="favour-text" id="you-favour-text">20 / 20 Favour</span>
+    <span class="stars" id="you-stars">☆☆</span>
+    <span class="heat" id="heat-text">Heat 3</span>
+  </div>
+  <div class="match-centre">
+    <span class="game-title">SIMMER</span>
+    <span id="round-text">Round 1 of 3 — first to 2 Stars</span>
+    <span id="turn-text">Your turn</span>
+  </div>
+  <div class="cook" id="brine-box">
+    <span class="cook-name">Chef Brine — RIVAL</span>
+    <span class="favour-bar"><span id="brine-favour-fill"></span></span>
+    <span class="favour-text" id="brine-favour-text">20 / 20 Favour</span>
+    <span class="stars" id="brine-stars">☆☆</span>
+  </div>
+  <div id="buttons">
+    <button id="end-turn" type="button">End Turn (E)</button>
+    <button id="how-to" type="button">How to play (H)</button>
+    <button id="mute" type="button">Sound: on</button>
+    <button id="restart" type="button">New match (R)</button>
+  </div>
+</header>
+<canvas id="game" aria-label="SIMMER: a street-food card duel. Play ingredient cards into your pot, finish dishes, and bring Chef Brine's Favour to zero."></canvas>
+<footer id="log-strip"><ol id="log" aria-label="Turn log"></ol></footer>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
