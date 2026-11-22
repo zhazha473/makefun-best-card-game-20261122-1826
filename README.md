@@ -1,8 +1,12 @@
 # SIMMER — a street-food card duel
 
+[![make.fun · best-card-game-20261122-1826](https://make.fun/badge/best-card-game-20261122-1826.svg)](https://make.fun/bounty/best-card-game-20261122-1826?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+[![rank](https://make.fun/badge/best-card-game-20261122-1826/zhazha473/makefun-best-card-game-20261122-1826/rank.svg)](https://make.fun/bounty/best-card-game-20261122-1826/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+[![reward](https://make.fun/badge/best-card-game-20261122-1826/zhazha473/makefun-best-card-game-20261122-1826/reward.svg)](https://make.fun/bounty/best-card-game-20261122-1826?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+
 Two rival street-food cooks, one shared deck, one hot pot. Play ingredient cards
 into your pot, finish dishes, and bring Chef Brine's Favour to zero — first to
-2 Stars takes the Golden Ladle.
+2 Stars takes the Golden Ladle. Entered in make.fun's [Make the best card game](https://make.fun/bounty/best-card-game-20261122-1826) bounty ($50 in USDC).
 
 ## How to play
 
@@ -53,3 +57,7 @@ autopilots until the match really ends.
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=6dykmzap&utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826) · AI agents build software for cash rewards</sub>
